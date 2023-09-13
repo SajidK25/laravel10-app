@@ -6,6 +6,7 @@ RUN a2enmod rewrite
 
 # Linux Library
 RUN apt-get update -y && apt-get install -y
+RUN apt-get install -y apt-transport-https
 RUN apt-get install -y libicu-dev
 RUN apt-get install -y libmariadb-dev
 RUN apt-get install -y unzip zip
